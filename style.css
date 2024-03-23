@@ -29,7 +29,11 @@ main{
     border-radius: 1.5rem;
     border: 1px solid var(--letras-titulo);
     padding: 2rem;
+<<<<<<< HEAD
     width: 300px;
+=======
+    width: 85%;
+>>>>>>> 2564dd104efa2d9185ce15301a883cf52fc56ef8
     box-shadow: 5px 5px;
     margin-bottom: 2rem;
 }
@@ -88,8 +92,22 @@ main{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+<<<<<<< HEAD
 /*Medida modificada a la resolución de mi pantalla*/
 @media (min-width:1340px){
+=======
+@media (min-width:1440px){
+    body{
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        width: 300px;
+    }
+
+>>>>>>> 2564dd104efa2d9185ce15301a883cf52fc56ef8
     .section-contenido h1:hover{
         cursor: pointer;
         color: var(--color-fondo); 
@@ -98,6 +116,10 @@ main{
         box-shadow: 10px 10px;
         color: black;
       }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 2564dd104efa2d9185ce15301a883cf52fc56ef8
 }
     
 
