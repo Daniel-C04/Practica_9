@@ -1,0 +1,103 @@
+:root{
+    --color-fondo: hsl(47, 88%, 63%);
+    --fondo-card: hsl(0, 0%, 100%);
+    --letras: hsl(0, 0%, 50%);
+    --letras-titulo:  hsl(0, 0%, 7%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-fondo);
+    padding: 0rem 2rem;
+}
+main{
+    background-color: var(--fondo-card);
+    border-radius: 1.5rem;
+    border: 1px solid var(--letras-titulo);
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 5px 5px;
+    margin-bottom: 2rem;
+}
+.figure-principal{
+    display: flex;
+    justify-content: center;
+}
+.figure-principal img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.section-titulo{
+    margin-top: 2.5rem;
+}
+.section-titulo div{
+    margin: 1rem 0;
+    background-color: var(--color-fondo);
+    width: min-content;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+}
+.section-titulo div p{
+    font-size: 12px;
+    font-weight: 800;
+}
+.section-titulo p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.section-contenido h1{
+    margin: 1.5rem 0;
+    font-weight: 800;
+    font-size: 20px;
+}
+.section-contenido p{
+    font-size: 12px;
+    color: var(--letras)
+}
+.section-autor{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.section-autor figure img{
+    width: 30px;
+    margin-right: 1.5rem;
+}
+
+.section-autor p{
+    color: var(--letras-titulo);
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Medida modificada a la resolución de mi pantalla*/
+@media (min-width:1340px){
+    .section-contenido h1:hover{
+        cursor: pointer;
+        color: var(--color-fondo); 
+    }
+    #titulo main:hover {
+        box-shadow: 10px 10px;
+        color: black;
+      }
+}
+    
+
